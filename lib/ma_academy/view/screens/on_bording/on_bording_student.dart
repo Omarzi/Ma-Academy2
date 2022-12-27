@@ -2,6 +2,7 @@ import 'package:flutter/cupertino.dart';
 import 'package:flutter/foundation.dart';
 import 'package:flutter/material.dart';
 import 'package:introduction_screen/introduction_screen.dart';
+import 'package:ma_academy/ma_academy/view/modules/bottom_nav_bar.dart';
 
 class OnBoardingStudent extends StatefulWidget {
   static const String routeName = 'OnBoardingStudent';
@@ -14,19 +15,9 @@ class _OnBoardingPageState extends State<OnBoardingStudent> {
 
   void _onIntroEnd(context) {
     Navigator.of(context).push(
-      MaterialPageRoute(builder: (_) => HomePage()),
+      MaterialPageRoute(builder: (_) => LayoutScreen()),
     );
   }
-
-  // Widget _buildFullscreenImage() {
-  //   return Image.asset(
-  //     "assets/images/teach_online.png",
-  //     fit: BoxFit.cover,
-  //     height: double.infinity,
-  //     width: double.infinity,
-  //     alignment: Alignment.center,
-  //   );
-  // }
 
   Widget _buildImage(String assetName, [double width = 350]) {
     return Image.asset('assets/images/$assetName', width: width);
@@ -112,22 +103,6 @@ class _OnBoardingPageState extends State<OnBoardingStudent> {
           borderRadius: BorderRadius.all(Radius.circular(25.0)),
         ),
       ),
-    );
-  }
-}
-
-class HomePage extends StatelessWidget {
-  @override
-  Widget build(BuildContext context) {
-    return Scaffold(
-      appBar: AppBar(
-          title: const Text('Home'),
-          leading: IconButton(
-              onPressed: () {
-                Navigator.pop(context);
-              },
-              icon: Icon(Icons.arrow_back))),
-      body: const Center(child: Text("This is the screen after Introduction")),
     );
   }
 }

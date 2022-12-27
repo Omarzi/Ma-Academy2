@@ -2,6 +2,7 @@
 import 'package:flutter/foundation.dart';
 import 'package:flutter/material.dart';
 import 'package:introduction_screen/introduction_screen.dart';
+import 'package:ma_academy/ma_academy/view/screens/visitor/teacher/home_layout/home_layout_visitor_teacher.dart';
 
 class OnBoardingTeacher extends StatefulWidget {
   static const String routeName = 'OnBoardingTeacher';
@@ -16,7 +17,7 @@ class _OnBoardingPageState extends State<OnBoardingTeacher> {
 
   void _onIntroEnd(context) {
     Navigator.of(context).push(
-      MaterialPageRoute(builder: (_) => HomePage()),
+      MaterialPageRoute(builder: (_) => LayoutScreenVisitorTeacher()),
     );
   }
 

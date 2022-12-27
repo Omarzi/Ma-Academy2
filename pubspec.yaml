@@ -37,7 +37,9 @@ dependencies:
   percent_indicator: ^4.2.2
   sizer: ^2.0.15
   introduction_screen: ^3.1.1
-
+  table_calendar: ^3.0.8
+  smooth_page_indicator: ^1.0.0+2
+  flutter_speed_dial: ^6.2.0
 dev_dependencies:
   flutter_lints: ^2.0.0
   flutter_test:

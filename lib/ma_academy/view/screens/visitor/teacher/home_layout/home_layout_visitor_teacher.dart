@@ -1,28 +1,30 @@
 import 'package:flutter/material.dart';
 import 'package:flutter/src/widgets/framework.dart';
-import 'package:ma_academy/ma_academy/view/screens/visitor/student/calender/calender.dart';
 
-import '../../../core/color_manager.dart';
-import '../screens/visitor/student/courses/courses_screen.dart';
-import '../screens/visitor/student/home/home_design_course.dart';
-import '../screens/visitor/student/profile/profile.dart';
+import '../../../../../../core/color_manager.dart';
+import '../activity/activity.dart';
+import '../calender/calender.dart';
+import '../courses/courses_visitor_teacher.dart';
+import '../home/home_screen.dart';
+import '../profile/profile_visitor_teacher.dart';
 
-class LayoutScreen extends StatefulWidget {
-  static const String routeName = 'moduleScreen';
+class LayoutScreenVisitorTeacher extends StatefulWidget {
+  static const String routeName = 'LayoutScreenVisitorTeacher';
 
-  const LayoutScreen({super.key});
+  const LayoutScreenVisitorTeacher({super.key});
 
   @override
-  State<LayoutScreen> createState() => _LayoutScreenState();
+  State<LayoutScreenVisitorTeacher> createState() => _LayoutScreenState();
 }
 
-class _LayoutScreenState extends State<LayoutScreen> {
+class _LayoutScreenState extends State<LayoutScreenVisitorTeacher> {
   int currentIndex = 0;
   List<Widget> screens = [
-    const DesignCourseHomeScreen(),
-    CoursesScreen(),
-    Calender(),
-    const ProfilScreen(),
+    HomeScreen(),
+    CoursesVisitorTeacher(),
+    ActivityScreenVisitorTeacher(),
+    CalenderVisitorTeacher(),
+    ProfilScreenVisitorTeacher(),
   ];
   @override
   Widget build(BuildContext context) {
@@ -41,16 +43,16 @@ class _LayoutScreenState extends State<LayoutScreen> {
         currentIndex: currentIndex,
         items: const [
           BottomNavigationBarItem(
-            icon: Icon(
-              Icons.home,
-            ),
-            label: 'Dashboard',
+            icon: Icon(Icons.home),
+            label: 'Home',
           ),
           BottomNavigationBarItem(
-            icon: Icon(
-              Icons.bookmark_add,
-            ),
+            icon: Icon(Icons.book),
             label: 'Courses',
+          ),
+          BottomNavigationBarItem(
+            icon: Icon(Icons.add_circle),
+            label: 'Add Activity',
           ),
           BottomNavigationBarItem(
             icon: Icon(Icons.calendar_month),

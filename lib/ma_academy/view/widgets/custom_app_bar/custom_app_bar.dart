@@ -3,7 +3,9 @@ import 'package:flutter/material.dart';
 class CustomAppBar extends StatelessWidget {
   final Widget title;
   final Widget? leading;
-  const CustomAppBar({super.key, required this.title, this.leading});
+  final List<Widget>? action;
+  const CustomAppBar(
+      {super.key, required this.title, this.leading, this.action});
 
   @override
   Widget build(BuildContext context) {
@@ -11,6 +13,7 @@ class CustomAppBar extends StatelessWidget {
       backgroundColor: Colors.transparent,
       elevation: 0.0,
       leading: leading,
+      actions: action,
       toolbarHeight: 65,
       title: title,
       centerTitle: true,

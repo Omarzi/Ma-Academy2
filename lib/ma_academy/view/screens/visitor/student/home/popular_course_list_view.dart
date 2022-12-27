@@ -1,10 +1,10 @@
-
 // ignore_for_file: library_private_types_in_public_api
 
 import 'package:flutter/material.dart';
 import 'package:ma_academy/core/hex_color.dart';
 import 'package:ma_academy/domain/models/category.dart';
-import 'package:ma_academy/ma_academy/view/screens/home/design_course_app_theme.dart';
+
+import 'design_course_app_theme.dart';
 
 class PopularCourseListView extends StatefulWidget {
   const PopularCourseListView({Key? key, this.callBack}) : super(key: key);
@@ -117,8 +117,8 @@ class CategoryView extends StatelessWidget {
                           child: Container(
                             decoration: BoxDecoration(
                               color: HexColor('#F8FAFB'),
-                              borderRadius: const BorderRadius.all(
-                                  Radius.circular(16.0)),
+                              borderRadius:
+                                  const BorderRadius.all(Radius.circular(16.0)),
                               // border: new Border.all(
                               //     color: DesignCourseAppTheme.notWhite),
                             ),
@@ -137,8 +137,8 @@ class CategoryView extends StatelessWidget {
                                             fontWeight: FontWeight.w600,
                                             fontSize: 16,
                                             letterSpacing: 0.27,
-                                            color: DesignCourseAppTheme
-                                                .darkerText,
+                                            color:
+                                                DesignCourseAppTheme.darkerText,
                                           ),
                                         ),
                                       ),
@@ -150,8 +150,7 @@ class CategoryView extends StatelessWidget {
                                             bottom: 8),
                                         child: Row(
                                           mainAxisAlignment:
-                                              MainAxisAlignment
-                                                  .spaceBetween,
+                                              MainAxisAlignment.spaceBetween,
                                           crossAxisAlignment:
                                               CrossAxisAlignment.center,
                                           children: <Widget>[
@@ -162,31 +161,27 @@ class CategoryView extends StatelessWidget {
                                                 fontWeight: FontWeight.w200,
                                                 fontSize: 12,
                                                 letterSpacing: 0.27,
-                                                color: DesignCourseAppTheme
-                                                    .grey,
+                                                color:
+                                                    DesignCourseAppTheme.grey,
                                               ),
                                             ),
                                             Row(
                                               children: [
                                                 Text(
                                                   '${category!.rating}',
-                                                  textAlign:
-                                                      TextAlign.left,
+                                                  textAlign: TextAlign.left,
                                                   style: const TextStyle(
-                                                    fontWeight:
-                                                        FontWeight.w200,
+                                                    fontWeight: FontWeight.w200,
                                                     fontSize: 18,
                                                     letterSpacing: 0.27,
-                                                    color:
-                                                        DesignCourseAppTheme
-                                                            .grey,
+                                                    color: DesignCourseAppTheme
+                                                        .grey,
                                                   ),
                                                 ),
                                                 Icon(
                                                   Icons.star,
-                                                  color:
-                                                      DesignCourseAppTheme
-                                                          .nearlyBlue,
+                                                  color: DesignCourseAppTheme
+                                                      .nearlyBlue,
                                                   size: 20,
                                                 ),
                                               ],

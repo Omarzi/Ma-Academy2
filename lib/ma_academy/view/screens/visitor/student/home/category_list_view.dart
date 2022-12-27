@@ -1,7 +1,8 @@
 import 'package:flutter/material.dart';
 import 'package:ma_academy/core/hex_color.dart';
 import 'package:ma_academy/domain/models/category.dart';
-import 'package:ma_academy/ma_academy/view/screens/home/design_course_app_theme.dart';
+
+import 'design_course_app_theme.dart';
 
 class CategoryListView extends StatefulWidget {
   const CategoryListView({Key? key, this.callBack}) : super(key: key);
@@ -223,8 +224,7 @@ class CategoryView extends StatelessWidget {
                                                   ),
                                                 ),
                                                 Container(
-                                                  decoration:
-                                                      BoxDecoration(
+                                                  decoration: BoxDecoration(
                                                     color: DesignCourseAppTheme
                                                         .nearlyBlue,
                                                     borderRadius:

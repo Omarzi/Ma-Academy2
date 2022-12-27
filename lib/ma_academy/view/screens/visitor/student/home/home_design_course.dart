@@ -2,10 +2,11 @@
 import 'package:flutter/material.dart';
 import 'package:ma_academy/core/color_manager.dart';
 import 'package:ma_academy/core/hex_color.dart';
-import 'package:ma_academy/ma_academy/view/screens/home/category_list_view.dart';
-import 'package:ma_academy/ma_academy/view/screens/home/course_info_screen.dart';
-import 'package:ma_academy/ma_academy/view/screens/home/popular_course_list_view.dart';
+
+import 'category_list_view.dart';
+import 'course_info_screen.dart';
 import 'design_course_app_theme.dart';
+import 'popular_course_list_view.dart';
 
 class DesignCourseHomeScreen extends StatefulWidget {
   static const String routeName = 'homeScreen';
