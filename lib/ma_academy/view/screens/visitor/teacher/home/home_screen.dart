@@ -22,7 +22,6 @@ class _HomeScreenState extends State<HomeScreen> {
   final controller = PageController(viewportFraction: 0.8, keepPage: true);
   var mini = false;
   var selectedfABLocation = FloatingActionButtonLocation.endDocked;
-
   @override
   Widget build(BuildContext context) {
     return Scaffold(
