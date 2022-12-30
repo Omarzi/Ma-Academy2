@@ -147,7 +147,7 @@ class _SearchState extends State<Search> {
                               });
                             },
                             child: Icon(
-                              Icons.list_sharp,
+                              Icons.close,
                               color: Colors.grey,
                             ),
                           ),

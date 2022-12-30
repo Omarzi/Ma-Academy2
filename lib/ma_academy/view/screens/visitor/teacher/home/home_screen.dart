@@ -8,7 +8,6 @@ import 'package:ma_academy/ma_academy/view/screens/visitor/teacher/home/search.d
 import 'package:ma_academy/ma_academy/view/widgets/custom_button/custom_button_join_us.dart';
 import 'package:ma_academy/ma_academy/view/widgets/custom_container/custom_grid_view.dart';
 import 'package:sizer/sizer.dart';
-er.dart';
 import '../../../../widgets/custom_container/custom_card_bage_view.dart';
 
 class HomeScreen extends StatefulWidget {
@@ -108,7 +107,7 @@ class _HomeScreenState extends State<HomeScreen> {
                               SizedBox(
                                 width: 1.w,
                               ),
-                              Icon(Icons.list_sharp)
+                              Icon(Icons.close)
                             ],
                           ),
                         ),

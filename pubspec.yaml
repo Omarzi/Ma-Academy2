@@ -32,19 +32,21 @@ dependencies:
   cupertino_icons: ^1.0.2
   flutter:
     sdk: flutter
+  flutter_speed_dial: ^6.2.0
   google_fonts: ^3.0.1
+  introduction_screen: ^3.1.1
   page_transition: ^2.0.9
   percent_indicator: ^4.2.2
   sizer: ^2.0.15
-  introduction_screen: ^3.1.1
-  table_calendar: ^3.0.8
   smooth_page_indicator: ^1.0.0+2
-  flutter_speed_dial: ^6.2.0
+  table_calendar: ^3.0.8
 dev_dependencies:
+  dio: ^4.0.6
+  flutter_bloc: ^8.1.1
   flutter_lints: ^2.0.0
   flutter_test:
     sdk: flutter
-
+  shared_preferences: ^2.0.15
 
 # For information on the generic Dart part of this file, see the
 # following page: https://dart.dev/tools/pub/pubspec
@@ -70,7 +72,6 @@ flutter:
   # "family" key with the font family name, and a "fonts" key with a
   # list giving the asset and other descriptors for the font. For
   # example:
-
   #
   # For details regarding fonts from package dependencies,
   # see https://flutter.dev/custom-fonts/#from-packages
